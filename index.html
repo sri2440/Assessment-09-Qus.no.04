@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment09- JavaScript</title>
+</head>
+<body>
+    <h2>Assessment09- JavaScript question no.04</h2>
+    <script>
+//4. Write a program that takes a number as input and checks if it's a multiple of both 3 and 5. 
+//Display "Multiple of 3 and 5" if it is, otherwise "Not a multiple of 3 and 5." 
+const userInput = prompt("Enter a number:");
+const number = parseInt(userInput);
+
+if (Number.isInteger(number)) {
+  if (number % 3 === 0 && number % 5 === 0) {
+    alert("Multiple of 3 and 5");
+  } else {
+    alert("Not a multiple of 3 and 5.");
+  }
+} else {
+  alert("Invalid input. Please enter a valid number.");
+}
+
+    </script>
+</body>
+</html>
